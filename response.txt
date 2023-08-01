@@ -1,0 +1,53 @@
+*   Trying 3.6.30.85:443...
+* Connected to a96c-122-162-147-14.ngrok-free.app (3.6.30.85) port 443 (#0)
+* ALPN: offers h2,http/1.1
+* TLSv1.3 (OUT), TLS handshake, Client hello (1):
+*  CAfile: /etc/ssl/certs/ca-certificates.crt
+*  CApath: none
+* TLSv1.3 (IN), TLS handshake, Server hello (2):
+* TLSv1.3 (IN), TLS handshake, Encrypted Extensions (8):
+* TLSv1.3 (IN), TLS handshake, Certificate (11):
+* TLSv1.3 (IN), TLS handshake, CERT verify (15):
+* TLSv1.3 (IN), TLS handshake, Finished (20):
+* TLSv1.3 (OUT), TLS change cipher, Change cipher spec (1):
+* TLSv1.3 (OUT), TLS handshake, Finished (20):
+* SSL connection using TLSv1.3 / TLS_AES_128_GCM_SHA256
+* ALPN: server accepted h2
+* Server certificate:
+*  subject: CN=*.ngrok-free.app
+*  start date: Jun 13 17:00:07 2023 GMT
+*  expire date: Sep 11 17:00:06 2023 GMT
+*  subjectAltName: host "a96c-122-162-147-14.ngrok-free.app" matched cert's "*.ngrok-free.app"
+*  issuer: C=US; O=Let's Encrypt; CN=R3
+*  SSL certificate verify ok.
+* TLSv1.3 (IN), TLS handshake, Newsession Ticket (4):
+* using HTTP/2
+* h2 [:method: GET]
+* h2 [:scheme: https]
+* h2 [:authority: a96c-122-162-147-14.ngrok-free.app]
+* h2 [:path: /get_report/123]
+* h2 [user-agent: curl/8.1.2]
+* h2 [accept: */*]
+* Using Stream ID: 1 (easy handle 0x55cea403a260)
+
+
+
+GET /get_report/123 HTTP/2
+Host: a96c-122-162-147-14.ngrok-free.app
+User-Agent: curl/8.1.2
+Accept: */*
+Content-Lenght: ---
+
+{
+    "value": 23
+}
+
+
+HTTP/2 200 
+content-type: text/html; charset=utf-8
+date: Wed, 26 Jul 2023 14:28:00 GMT
+ngrok-trace-id: b8cb14ffef095080c448c0b2ea0891ee
+server: Werkzeug/2.3.6 Python/3.8.10
+content-length: 16
+
+<h1>Running</h1>
