@@ -109,7 +109,7 @@ def generate_report(report_id: str, current_time: datetime):
 @app.route("/trigger_report")
 def triggerReport():
     # report_id = generate_report_id()
-    # async run_report(report_id, datetime.now()) // <-------- time legi
+    # async run_report(report_id, datetime.now()) //
     # asyncio in python
     report_id = generate_report_id() # TODO: implement this function
     generate_report.delay(report_id, datetime.now())
@@ -128,7 +128,6 @@ async def getReport(report_id: str):
     response = make_response(csv_content)
     response.headers["content-type"] = "text/csv"
     return response
-
 
 if __name__ == '__main__':
     app.run(debug=True)
