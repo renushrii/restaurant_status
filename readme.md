@@ -21,8 +21,8 @@ This is a Flask web application that uses Celery to generate reports asynchronou
 1. Clone the repository:
 
 ```ruby
-git clone https://github.com/yourusername/flask-celery-report-app.git
-cd flask-celery-report-app
+git clone https://github.com/renushrii/restaurants_status.git
+cd restaurants_status
 ```
 
 2. Install the required packages:
@@ -55,7 +55,7 @@ python models.py db upgrade
 ```
 
 ## Data Population
-To populate the database with sample data, run the following commands in your terminal:
+To populate the database with sample data, first unzip `restaurant.zip` file then run the following commands in your terminal:
 
 ```bash
 python populate_data.py
